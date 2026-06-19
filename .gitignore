@@ -1,1 +1,7 @@
 .DS_Store
+
+# dir2mcp local state — never publish (contains connection.json, payments/, index, logs)
+.dir2mcp/
+
+# Companion docling-serve setup notes — kept local
+SETUP-docling-serve.md
