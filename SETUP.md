@@ -32,9 +32,20 @@ brew untap dirstral/tap
 Ставим сразу, чтобы потом не споткнуться на шаге подключения.
 
 ```bash
-brew tap oven-sh/bun
 brew install bun
 ```
+
+> Раньше для bun требовался отдельный источник (`brew tap oven-sh/bun`).
+> Теперь bun есть в стандартном Homebrew, и отдельный tap не нужен.
+> Если bun уже был установлен из старого источника и `brew install bun`
+> ругается на конфликт (`Formulae with the same name from different taps`),
+> переустановите из основного Homebrew:
+>
+> ```bash
+> brew uninstall bun
+> brew untap oven-sh/bun
+> brew install bun
+> ```
 
 ---
 
